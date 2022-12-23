@@ -1,0 +1,25 @@
+All in all, I'd say I have about 2.5 hours into this.  Broke out as follows:
+
+.5 hour researching and deciding between Angular, React, Vue, jQuery
+    I'm not familiar with any of these, so I watched a couple YouTube videos to figure out the differences enough to decide on which to use.
+
+.5 hour researching React
+    Committing to React, I watched portions of the first hour of https://www.youtube.com/watch?v=Dorf8i6lCuk&ab_channel=Academind, found enough rope to hang myself, and moved on.
+
+.5 hour researching Twitter API
+    Even if it didn't end up contributing to my submission, I signed up for a Twitter Developer Account and did some poking around the documentation.  
+    This is another piece of the puzzle that's new to me, but what I was reading about the Filtered stream (https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/api-reference/get-tweets-search-stream) looked promising, so I put that aside and started putting something tangible together.
+    
+1 hour working in Visual Studio
+    Started a new solution, adding React and API projects
+    Created these files, figuring they'd be necessary for the finished product:
+        .\TweetAPI\Controllers\TweetController.cs
+        .\TweetAPI\Models\TweetModel.cs
+    Edited the following files:
+        .\TweetUI\ClientApp\src\Tweet.js
+        .\TweetUI\ClientApp\src\App.js
+    In a half hour I got to the end of my React rope, so I watched a bit more of the video linked above and was also able to incorporate what was shown about getting a list of items to show on the page by the end of my hour.
+    
+    
+Reflecting on where I'm at, I wish I was further, but I'm satisfied with where I got with React considering I started from standstill.  
+My next steps would be to put together a call to the Twitter API and then channel the data to React, expanding Tweet.js to also accomodate Author, Handle, and a posted timestamp.
