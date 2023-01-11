@@ -7,6 +7,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthentication()/*
+    .AddTwitter(opts =>
+    {
+        opts.ConsumerKey = builder.Configuration[key: "Authentication:Twitter:ApiKey"];
+        opts.ConsumerKeySecret = builder.Configuration[key: "Authentication:Twitter:ApiKeySecret"];
+    })*/;
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -17,6 +24,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

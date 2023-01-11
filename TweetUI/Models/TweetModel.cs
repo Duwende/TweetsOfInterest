@@ -1,4 +1,6 @@
-﻿namespace TweetAPI.Models
+﻿using System;
+
+namespace TweetUI.Models
 {
     public class TweetModel
     {
